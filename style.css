@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+border: solid 2px #000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 120px;
+}
+
+.campo {
+    border:solid 1px #000;
+    margin: 20px 0;
+    height: 100px;
+}
+
+.subtitle {
+    background-color:#1613a3 ;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.titulo{
+    margin: 20px 0;
+}
+
+.dados{
+    padding: 10px 0;
+    color: #444;
+}
+
+.divisao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisao>div{
+     
+     width: 800px;
+}
+
+.link{
+    text-decoration: none;
+    color:#444;
+    padding-right: 10px;
+}
+
+.link:hover{
+    color: #1613a3;
+
+}
+
+.facul{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proj{
+    font-size: 40px;
+    text-align: center;
+    height: 100px;
+    
+}
+
+.formu {
+    border:solid 1px #000;
+    margin: 20px 0;
+    height: 120px;
+}
+
+.buttom {
+    background-color:#1613a3 ;
+    color: #fff;
+    padding: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .buttom{
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div{
+        text-align: center;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --cor-fundo:#1613a3;
+    --cor-hover: rgb(118, 180, 145);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
